@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/math.js" defer></script>
+    <script src="js/calculator.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__block">
+            <label for="inputA">Первое значение:</label>
+            <input type="number" class="input-a" id="inputA">
+        </div>
+        <div class="wrapper__block">
+            <label for="inputA">Второе значение:</label>
+            <input type="number" class="input-b" id="inputB">
+        </div>
+        <div class="wrapper__block operator-block">
+            <label for="operators">Оператор: </label>
+            <select class="operators" id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <button class="result-btn">Вычислить</button>
+        <p>
+            Ответ: <span class="output"></span>
+        </p>
+    </div>
+</body>
+
+</html>
